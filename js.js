@@ -19,17 +19,17 @@ function movidaComp(){
 function ganar(movidaPc){
     userScore++;
     userScore_span.innerHTML = userScore;
-    result_div.innerHTML = "GANASTE <br> PC:" + movidaPc;
+    result_div.innerHTML = "GANASTE <br> PC " + movidaPc;
 }
 
 function perder(movidaPc){
     compScore++;
     compScore_span.innerHTML = compScore;
-    result_div.innerHTML = "PERDISTE <br> PC:" + movidaPc ;
+    result_div.innerHTML = "PERDISTE <br> PC " + movidaPc ;
 }
 
 function empate(movidaPc){
-    result_div.innerHTML = "EMPATE <br> PC:" + movidaPc;
+    result_div.innerHTML = "EMPATE <br> PC " + movidaPc;
 }
 
 function game(opcion){
