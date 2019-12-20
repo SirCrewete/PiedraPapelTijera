@@ -2,13 +2,11 @@ let userScore = 0;
 let compScore = 0;
 const userScore_span = document.getElementById('usuario-score');
 const compScore_span = document.getElementById('pc-score');
-const scoreBoard_div = document.querySelector('.marcador p');
+const scoreBoard_div = document.querySelector('resultado');
 const result_div = document.querySelector('.resultado p');
 const piedra_div = document.getElementById('piedra');
 const papel_div = document.getElementById('papel');
 const tijera_div = document.getElementById('tijera');
-
-
 
 
 function movidaComp(){
@@ -18,25 +16,21 @@ function movidaComp(){
     return (movida);
 }
 
-
-function ganar(){
+function ganar(movidaPc){
     userScore++;
     userScore_span.innerHTML = userScore;
-    result_div.innerHTML = "GANASTE";
-   
+    result_div.innerHTML = "GANASTE <br> PC:" + movidaPc;
 }
 
-function perder(){
+function perder(movidaPc){
     compScore++;
     compScore_span.innerHTML = compScore;
-    result_div.innerHTML = "PERDISTE";
+    result_div.innerHTML = "PERDISTE <br> PC:" + movidaPc ;
 }
 
-function empate(){
-    result_div.innerHTML = "EMPATE";
-
+function empate(movidaPc){
+    result_div.innerHTML = "EMPATE <br> PC:" + movidaPc;
 }
-
 
 function game(opcion){
     const movidaPc = movidaComp();
@@ -45,19 +39,20 @@ function game(opcion){
         case 'piedratijera':
         case 'papelpiedra':
         case 'tijerapapel':
-            ganar(movidaUsuario, movidaPc);
+            ganar(movidaPc);
         break;
         case 'piedrapapel':
         case 'papeltijera':
         case 'tijerapiedra':
-            perder(movidaUsuario, movidaPc);
+            perder(movidaPc);
         break;
         case 'piedrapiedra':
         case 'papelpapel':
         case 'tijeratijera':
-            empate(movidaUsuario, movidaPc);
+            empate(movidaPc);
         break;
     }
+
 }
 
 function main(){
