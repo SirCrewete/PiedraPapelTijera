@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+
+body{
+    background: #C5E0E6;
+}
+
+header{
+    border-color: black;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    width: 600px;
+    margin: 40px auto;
+    font-family: 'Lilita One', cursive;
+    
+}
+
+.marcador{
+    border: 3px solid black;
+    margin: 20px auto;
+    width: 600px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50px;
+    text-align: center;
+    padding: 15px 20px;
+    position: relative;
+    font-family: 'Lilita One', cursive;
+}
+
+.choice{
+    display: inline-block;
+    border: 12px solid black;
+    border-radius: 70%;
+    background: #98CFFF;
+    padding: 20px;
+    margin: 20px;
+    transition: all 0.6s ease;
+        
+}
+
+.opciones{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.resultado{
+    margin: 20px auto;
+    text-align: center;
+    border: 6px solid black;
+    width: 350px;
+    height: 240px;
+    font-size: 40px;
+    font-family: 'Lilita One', cursive;
+    background-color: #B5E6FF;
+    position: relative;
+
+}
+
+.badge{
+    
+    font-size: 34px;
+}
+
+.usuario-label{
+    position: absolute;
+    top: auto;
+    left: -25px;
+    height: 40%;
+    width: 50%;
+}
+
+.pc-label{
+    position: absolute;
+    right: -25px;
+    height: 60%;
+    width: 50%;
+}
+
+#usuario-score, #pc-score{
+    padding: 5px 20px;;
+    font-size: 30px;
+}
+
+.creador{
+    position: absolute;
+    margin: 0px;
+}
+
+.choice:hover{
+    background: #BFFF87;
+    cursor: pointer;
+    border-color: black;
+
+}
+
+.jugar:hover{
+    background: #BFFF87;
+    cursor: pointer;
+    border-color: black;
+}
